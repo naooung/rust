@@ -21,7 +21,14 @@ impl Rectangle {
     fn square(size: u32) -> Self {
         Self {
             width: size,
-            height: size, // 파라미터명과 필드명이 같으면 단축 구문 사용 가능 (인자로 width/height를 받을 때)
+            height: size, 
+        }
+    }
+    
+    fn new(width: u32, height: u32) -> Self {
+        Self {
+            width, // 파라미터명과 필드명이 같으면 단축 구문 사용 가능
+            height,
         }
     }
 
